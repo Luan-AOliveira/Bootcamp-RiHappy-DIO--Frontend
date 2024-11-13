@@ -1,0 +1,241 @@
+/* @import url() serve para importar um link, como a fonte Raleway do Google Fonts, ou pastas que estao em um nivel diferente, que e do caso das minhas pastas css  */
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* o "*" serve para aplicar alteracoes em TODO o HTML. Neste caso, deixei algums informacoes como padrao para nao repetir nos seletores */
+* {
+  font-family: Raleway;
+  margin: 0;
+  box-sizing: border-box;
+  color: #fff;
+  text-align: center;
+}
+
+
+
+/* Aqui determino que apenas o fundo do <body> seja preto */
+
+body {
+    background-color: black;
+}
+
+/* Todas as sections terao 100px de distancia, verticalmente, de outros elementos, alem de ter o valor "auto" para os lados, centralizando-os. */
+  
+section {
+    margin: 100px auto;
+}
+
+
+
+.linha-azul {
+    border: none;
+    border-top: 2px solid #007FFF; /* Escolha a cor azul desejada */
+    margin: 20px 0; /* Espaçamento acima e abaixo da linha */
+    width: 100%; /* Faz a linha ocupar toda a largura */
+}
+
+
+
+/* estilizacao apenas da tag <img> dentro da class banner */
+.banner img {
+    width: 248px;
+    height: 214px;
+  }
+  
+/* estilizacao de toda a class banner-content */
+  
+.banner-content {
+    padding-top: 50px;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23.48px;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(49, 168, 221, 0) 100%
+    );
+    background-color: black;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(51, 168, 219, 0.15) 0%,
+        rgba(0, 0, 0, 0.08) 100%
+    ),
+    url(./assets/images/banner.png);
+}
+  
+/* estilizacao apenas da tag <h1> deentro da class banner */
+  
+.banner h1 {
+    padding: 50px 0 20px 0px;
+    font-size: 40px;
+    font-weight: 900;
+    background: linear-gradient(180deg, #33a8db 0%, #0c5a93 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    text-transform: uppercase;
+}
+  
+/* estilizacao apenas da tag <p> deentro da class banner */
+  
+.banner p {
+    margin: 0 30% 24px;
+  }
+  
+/* estilizacao apenas da tag <button> deentro do header, mas poderia ser .banner tbm */
+  
+header button {
+    color: #31a8dd;
+    font-size: 1rem;
+    font-weight: 900;
+    padding: 16px 32px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    background-color: transparent;
+    border-image: linear-gradient(#3ba1cd, #1572b7);
+    border-image-slice: 10;
+    transition: 0.6s;
+    margin-bottom: 50px;
+}
+  
+/* ":hover" determina o que ocorrea com o <button> quando passarmos o mouse nele */
+  
+header button:hover {
+    cursor: pointer; /* cursor muda para o formato pointer */
+    /* o botao diminuira para 0.98, sendo sua escala padrao 1*/
+    transform: scale(0.98);
+    background-color: #33a8db; /* quando passar o mouse, a cor de fundo ira mudar para a #33a8db*/
+    color: #fff; /* quando passar o mouse, a cor da fonte ira mudar para a #ff */
+}
+  
+/* ":focus" segue a mesma logica q hover, mas apenas quando clicamos no button */
+  
+header button:focus {
+    transform: scale(0.95); /* ao clicarmos, o botao diminuira ainda mais */
+}
+
+
+
+/* Limitei a larguda de tudo deentro da ID #course-conteent em 800px, deixando-o mais 
+`enxuto` (n sei se essa palavra existe ou se e isso q ela significa isso msm) */
+  
+#course-content {
+    width: 800px;
+}
+  
+/* um padding de 20px, para todas as direcoes, em todos os <p> dentro do id course-content  */
+  
+#course-content p {
+    padding: 20px;
+}
+  
+/* estilizacoes de todos as tags <h2> */
+  
+h2 {
+    color: #33a8db;
+    font-size: 2rem;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    line-height: 2rem;
+}
+  
+/* estilizacoes da class module */
+  
+.module {
+    border: 1px solid #33a8db;
+    border-radius: 57px;
+    padding: 16px 127px;
+    box-shadow: -2px 6px 4px 0px #00000066 inset;
+    width: Fixed (535px) px;
+    height: (51px);
+    padding: 16px 127px 16px 127px;
+    margin: 20px;
+    background-color: rgb(40, 39, 39);
+    box-shadow: inset -5px 6px 8px rgba(0, 0, 0, 0.7);
+}
+  
+/* estilizacao apenas da tag <span> dentro da class module */
+  
+.module span {
+    color: #33a8db;
+}
+  
+/* estilizacao do id transform-world */
+  
+#transform-world {
+    background-image: url(./assets/images/woman-code.png);
+    background-size: cover; /* Garante que a imagem cubra todo o elemento */
+    background-position: center; /* Centraliza a imagem */
+    background-attachment: fixed; /* Torna o fundo fixo */
+    position: relative;
+    height: 363px;
+}
+
+#transform-world .linha-azul {
+    padding-top: 340px;
+}
+
+/* estilizacao apenas da tag <p> dentro do id transform-world */
+  
+#transform-world p {
+    position: absolute;
+    position: left;
+    max-width: 250px;
+    height: 141px;
+    top: 111px;
+    left: 198px;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 46.96px;
+    text-align: left;
+    text-shadow: 9px 6px rgba(52, 169, 220, 0.5);
+}
+/* estilizacao apenas da tag <p> dentro do id professional-challenges */
+  
+#professional-challenges p {
+    font-size: 16px;
+    height: 76px;
+    text-align: center;
+    margin: 20px 20%;
+}
+  
+/* estilizacao apenas da tag <h2> dentro do id professional-challenges */
+  
+#professional-challenges h2 {
+    margin: 20px;
+}
+
+
+
+/* estilizacoes do rodepe da pagina */
+
+footer {
+    cursor: pointer;
+    background: linear-gradient(
+      180deg,
+      rgba(51, 168, 219, 0) 0%,
+      rgba(51, 168, 219, 0.2) 99.99%,
+      rgba(51, 168, 219, 0.2) 100%
+    );
+}
+/* todo a img dentro do footer ira ter uma margem, para toda as direcoes, de 10px */
+  
+footer img {
+    margin: 10px;
+  }
+/* customizacao apenas da tag <a> dentro do footer */
+  
+footer a {
+    color: rgba(52, 169, 220, 0.5);
+    text-decoration: none; /* tira a estilizacao padrao de um link (sublinhado */
+    font-size: 16px;
+    font-weight: 900; /* negrito */
+}
+  
+/* customizacao apenas da tag <p> dentro do footer */
+  
+footer p {
+    padding-bottom: 40px;
+}
