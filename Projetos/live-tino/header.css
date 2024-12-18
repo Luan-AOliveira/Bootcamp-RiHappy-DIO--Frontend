@@ -1,0 +1,141 @@
+.header-main {
+    height: 6rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+    position: relative;
+    z-index: 2;
+}
+
+
+.logo h1 {
+    font-size: 3rem;
+}
+
+
+.logo-span {
+    color: var(--color-yellow)
+}
+
+
+.logo img {
+    width: 3rem;
+}
+
+
+.header-main ul {
+    display: flex;
+    gap: 2rem;    
+}
+
+
+.header-main li:not(:has(a.btn))::after {
+    content: '';
+    width: 0;
+    /* margin: 0 auto; */
+    height: .3rem;
+    background-color: var(--color-yellow);
+    display: block;
+    position: relative;
+    bottom: -.5rem;
+    transition: var(--transition);
+}
+
+ 
+.header-main li:hover:not(:has(a.btn))::after {
+    width: 100%;
+}
+
+ 
+.sanduiche {
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    display: none;
+}
+
+
+.barra {
+    display: block;
+    width: 3rem;
+    height: .3rem;
+    background-color: var(--color-yellow);
+    margin: .5rem auto;
+    border-radius: var(--radius);
+    transition: var(--transition);
+}
+
+
+@media(max-width:990px) {
+
+    .sanduiche {
+        display: block;
+    }
+
+    .nav-menu {
+        width: 100%;
+        position: fixed;
+        left: 0;
+        top: -800px;
+        z-index: 1;
+        gap: 0;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 100vh;
+        transition: var(--transition);
+        background-image: linear-gradient(110deg,
+        hsl(227deg 58% 95%) 0%,
+        hsl(228deg 56% 95%) 11%,
+        hsl(229deg 57% 95%) 22%,
+        hsl(229deg 55% 94%) 33%,
+        hsl(227deg 58% 94%) 44%,
+        hsl(228deg 56% 93%) 55%,
+        hsl(229deg 57% 93%) 66%,
+        hsl(229deg 55% 92%) 76%,
+        hsl(227deg 53% 92%) 85%,
+        hsl(230deg 55% 91%) 93%,
+        hsl(228deg 53% 91%) 100%);
+    }
+
+    .nav-menu li {
+        margin: 2rem 0;
+    }
+
+    .header-main li:hover:not(:has(a.btn))::after {
+        width: 0%;
+    }
+
+    .nav-menu a:hover {
+        border-bottom: 3px solid var(--color-yellow);
+    }
+
+    .active { 
+        top: 0;
+    }
+
+    .sanduiche.active .barra:first-child {
+        transform: translateY(8px) rotate(360deg) rotate(45deg);
+    }
+
+
+    .sanduiche.active .barra:nth-child(2) {
+        opacity: 0;
+    }
+
+    .sanduiche.active .barra:last-child {
+        transform: translateY(-8px) rotate(-360deg) rotate(-45deg);
+    }
+
+}
+
+

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./hero.css">
+    <link rel="stylesheet" href="./servicos.css">
+    <title>seuPet</title>
+    <!-- chamado para mudar o logo da aba que fica ao lado do title no navegador -->
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <!-- chamado font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- main parte principal do codigo do container principal onde vai tudo dentro -->
+    <main class="container">
+
+
+
+        <!------------------------------ começo cabeçalho header ------------------------------>
+        <header class="header-main">
+
+            <!-- logo -->
+            <section class="logo">
+                <img src="./images/logo.png" alt="Imagem da logo do site seuPet">
+                <!-- o nome da empresa separando também a parte que fica colorida(spam) -->
+                <h1>seu<span class="logo-span">Pet</span></h1>
+            </section>
+
+
+        <!-- (nav)menu principal de navegação opções a direita do logo e nome da empresa -->
+            <nav class="nav-menu">
+
+                <ul>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Outlet</a></li>
+                    <li><a href="#">Criar Conta</a></li>
+                    <li><a href="#" class="btn">Login</a></li>
+                </ul>
+
+                <div class="sanduiche">
+                    <span class="barra"></span>
+                    <span class="barra"></span>
+                    <span class="barra"></span>
+                </div>
+
+            </nav>
+
+        </header>
+        <!------------------------------ fim do header cabeçalho  ------------------------------>
+
+
+
+        <!------------------------------ começo hero ------------------------------>
+        <section class="hero">
+
+            <div class="hero-text">
+                <h2>O seu petShop preferido com os melhores serviços para o seu melhor amigo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, iste?</p>
+                <div class="hero-contato">
+                    <a href="#" class="btn">Contato</a>
+                    <p><a href="#"><i><i class="fa-solid fa-circle-play"></i></i> Conheça</a></p>
+                </div>
+            </div>
+
+
+            <figure class="hero-image">
+                <img src="./images/pets.jpg" alt="Foto de um cachorro em um gato">
+            </figure>
+
+        </section>
+        <!------------------------------ fim hero  ------------------------------>
+
+
+
+        <!------------------------------ Serviços  ------------------------------>
+        <section class="servicos">
+                 
+
+            <div class="servicos-item">
+                <i class="fa-solid fa-bone"></i>
+                <p>Alimentos</p>
+            </div>
+
+            <div class="servicos-item">
+                <i class="fa-solid fa-paw"></i>
+                <p>Dog Walker</p>
+            </div>
+
+            <div class="servicos-item">
+                <i class="fa-solid fa-house"></i>
+                <p>Pet Anjo</p>
+            </div>
+
+            <div class="servicos-item">
+                <i class="fa-solid fa-stethoscope"></i>
+                <p>Veterinário</p>
+            </div>
+
+            <div class="servicos-item">
+                <i class="fa-solid fa-taxi"></i>
+                <p>Pet Taxi</p>
+            </div>
+
+            <div class="servicos-item">
+                <i class="fa-solid fa-shower"></i>
+                <p>Banho / Tosa</p>
+            </div>
+
+
+        </section>
+        <!------------------------------ Fim do Serviços  ------------------------------>
+
+
+
+    </main>
+
+    <script src=".js/menu.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+.servicos {
+    max-height: 20vh;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.servicos-item {
+    text-align: center;
+    background-color: var(--color-yellow-700);
+    width: 13rem;
+    padding: 2rem 1rem;
+    border-radius: var(--radius);
+    color: var(--color-dark);
+    transition: var(--transition);
+}
+
+.servicos-item:hover {
+    background-color: var(--color-yellow);
+    cursor: pointer;
+}
+
